@@ -9,163 +9,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Vincent Achy</title>
 
-    <link rel="stylesheet" href="./assets/lib/locomotive-scroll.min.css" />
-    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div data-scroll-container>
-      <header data-scroll>
-        <div class="links">
-          <a href="#portfolio" data-scroll-to>PORTFOLIO</a>
-          <a href="mailto:vincent.achy@gmail.com">CONTACT</a>
-        </div>
-        <div class="wrapper">
-          <div data-scroll class="appear" id="h1-wrapper">
-            <h1 data-scroll data-scroll-speed="4" data-scroll-position="left">
-              Vincent Achy
-            </h1>
-          </div>
-        </div>
-        <div data-scroll data-scroll-repeat="true" class="wrapper" id="color">
-          <div data-scroll class="appear" id="h2-1">
-            <h2
-              data-scroll
-              data-scroll-speed="6"
-              data-scroll-direction="horizontal"
-              data-scroll-position="left"
-            >
-              Développeur
-            </h2>
-          </div>
-        </div>
-        <div class="wrapper">
-          <div data-scroll class="appear" id="h2-2">
-            <h2
-              data-scroll
-              data-scroll-speed="-6"
-              data-scroll-direction="horizontal"
-              data-scroll-position="left"
-            >
-              Frontend
-            </h2>
-          </div>
-        </div>
-        <div class="scroll-wrapper">
-          <p>please scroll</p>
-        </div>
-      </header>
-
-      <section class="about">
-        <div class="h2-wrapper">
-          <h2>À propos</h2>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-          suscipit, minima cupiditate quisquam quibusdam accusamus velit nam
-          perspiciatis odit, sed dolor doloribus? Exercitationem amet quod, unde
-          quaerat delectus eius optio expedita? In sequi non, est vero veniam,
-          earum beatae assumenda commodi recusandae consequuntur quod laboriosam
-          doloribus cum doloremque dolore hic eos perferendis explicabo culpa
-          eum sed delectus deleniti ad! Quia culpa voluptates fuga enim? Et
-          dolore fugiat labore quae, officia provident maxime voluptatum beatae
-          delectus hic, quia placeat harum quibusdam.
-        </p>
-      </section>
-
-      <div data-scroll class="line-wrapper">
-        <div class="line"></div>
+    <header>
+      <div class="links">
+        <a href="#portfolio">PORTFOLIO</a>
+        <a href="mailto:vincent.achy@gmail.com">CONTACT</a>
+      </div>
+      <div class="wrapper">
+        <h1>Vincent Achy</h1>
+        <h2>Développeur</h2>
+        <h2>Frontend</h2>
       </div>
 
-      <section class="skills">
-        <h2 class="title">
-          <span>Skills</span>
-        </h2>
-
-        <div class="wrapper">
-          <div data-scroll class="appear">
-            <p
-              data-scroll
-              data-scroll-speed="-2"
-              data-scroll-direction="horizontal"
-            >
-              JavaScript
-            </p>
-          </div>
-        </div>
-        <div class="wrapper">
-          <div data-scroll class="appear">
-            <p
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="horizontal"
-            >
-              React
-            </p>
-          </div>
-        </div>
-        <div class="wrapper">
-          <div data-scroll class="appear">
-            <p
-              data-scroll
-              data-scroll-speed="-6"
-              data-scroll-direction="horizontal"
-            >
-              CSS/SASS
-            </p>
-          </div>
-        </div>
-        <div class="wrapper">
-          <div data-scroll class="appear">
-            <p
-              data-scroll
-              data-scroll-speed="3"
-              data-scroll-direction="horizontal"
-            >
-              SEO
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <div data-scroll class="line-wrapper">
-        <div class="line"></div>
+      <div class="scroll-wrapper">
+        <a href="#portfolio">Please scroll</a>
       </div>
+    </header>
 
-      <section class="portfolio" id="portfolio">
-        <h2 class="title">
-          <span>Portfolio</span>
-        </h2>
-        <div class="projects-container">
-          <div data-scroll data-scroll-speed="1" class="project" id="p1">
-            <img src="./assets/img/projet-1.jpg" alt="projet 1" />
-            <div class="project-infos">
-              <a href="https://www.google.com" target="_blank">Lyon Beton</a>
-              <p>2020</p>
-            </div>
-          </div>
-          <div data-scroll class="project" id="p2">
-            <img src="./assets/img/projet-2.jpg" alt="projet 2" />
-            <div class="project-infos">
-              <a href="https://www.google.com" target="_blank">Casta</a>
-              <p>2021</p>
-            </div>
-          </div>
-          <div data-scroll class="project" id="p3">
-            <img src="./assets/img/projet-3.jpg" alt="projet 3" />
-            <div class="project-infos">
-              <a href="https://www.google.com" target="_blank">Everpost</a>
-              <p>2022</p>
-            </div>
+    <section class="about">
+      <h2>À propos</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+        suscipit, minima cupiditate quisquam quibusdam accusamus velit nam
+        perspiciatis odit, sed dolor doloribus? Exercitationem amet quod, unde
+        quaerat delectus eius optio expedita? In sequi non, est vero veniam,
+        earum beatae assumenda commodi recusandae consequuntur quod laboriosam
+        doloribus cum doloremque dolore hic eos perferendis explicabo culpa eum
+        sed delectus deleniti ad!
+      </p>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="skills">
+      <h2>Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="appear">
+          <p>JavaScript</p>
+        </div>
+        <div class="appear">
+          <p>React</p>
+        </div>
+        <div class="appear">
+          <p>CSS / SASS</p>
+        </div>
+        <div class="appear">
+          <p>SEO</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="portfolio" id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="projects-container">
+        <div class="project" id="p1">
+          <img src="./assets/img/projet-1.jpg" alt="projet 1" />
+          <div class="project-infos">
+            <a href="https://www.google.com" target="_blank">Lyon Beton</a>
+            <p>2020</p>
           </div>
         </div>
-      </section>
-
-      <div data-scroll class="line-wrapper">
-        <div class="line"></div>
+        <div class="project" id="p2">
+          <img src="./assets/img/projet-2.jpg" alt="projet 2" />
+          <div class="project-infos">
+            <a href="https://www.google.com" target="_blank">Casta</a>
+            <p>2021</p>
+          </div>
+        </div>
+        <div class="project" id="p3">
+          <img src="./assets/img/projet-3.jpg" alt="projet 3" />
+          <div class="project-infos">
+            <a href="https://www.google.com" target="_blank">Everpost</a>
+            <p>2022</p>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <script src="./assets/lib/locomotive-scroll.min.js"></script>
-    <script src="./assets/js/index.js"></script>
+    </section>
   </body>
 </html>

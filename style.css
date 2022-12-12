@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*::selection {
+  background: rgb(223, 223, 223);
+  color: #161616;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", cursive;
+  background: #161616;
+  color: rgb(223, 223, 223);
+  transition: 0.7s ease-in-out;
+  box-sizing: border-box;
+}
+
+/* header */
+
+header {
+  height: 100vh;
+  padding: 16px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 60px;
+}
+
+.links a {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+a,
+a:visited {
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: rgb(223, 223, 223);
+  transition: 0.1s linear;
+  font-size: 10px;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: rgb(223, 223, 223);
+  height: 0.1px;
+  bottom: 0px;
+  left: 0;
+  transform-origin: center;
+}
+
+a:hover {
+  transform: scale(1.1);
+  color: rgb(151, 151, 151);
+}
+
+a:hover::after {
+  animation: animLink 1.4s infinite ease-in-out;
+}
+@keyframes animLink {
+  50% {
+    transform: scaleX(0.8);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper h1 {
+  font-size: 60px;
+  margin: 38px 0 8px;
+  letter-spacing: -4px;
+  transform: scale(1, 0.7);
+}
+
+.wrapper h2 {
+  font-size: 40px;
+  margin: -10px;
+  letter-spacing: -2px;
+  transform: scale(1, 0.7);
+}
+
+.scroll-wrapper {
+  margin: 460px auto 0;
+  text-align: center;
+}
+
+.scroll-wrapper a {
+  font-size: 14px;
+}
+
+/* section about */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  transform: scale(1, 0.6);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  width: 70%;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  transform: scale(1, 0.9);
+  text-align: justify;
+}
+
+/* section skills */
+
+.line {
+  height: 0.1px;
+  width: 80%;
+  margin: 10px auto 20px;
+  background: #e3e3e3a1;
+}
+
+.skills {
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  transform: scale(1, 0.5);
+  margin-bottom: 30px;
+}
+
+.skills-wrapper {
+  margin-bottom: 60px;
+}
+
+.skills-wrapper p {
+  font-size: 50px;
+  letter-spacing: -1px;
+  transform: scale(1, 0.8);
+  background: #373737;
+  color: rgb(223, 223, 223);
+  display: inline-block;
+  padding: 8px;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+/* section portfolio */
+
+.portfolio {
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  transform: scale(1, 0.5);
+  margin-top: 30px;
+}
+
+.projects-container {
+  margin: 20px auto;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 500px);
+  grid-gap: 6px;
+  justify-content: center;
+}
+
+.project {
+  position: relative;
+  width: 60%;
+  margin: 0 auto 10px;
+  border-radius: 10px;
+  /* border: 2px solid red; */
+}
+
+.project img {
+  transition: 0.4s ease-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project:hover img {
+  filter: brightness(16%);
+}
+
+.project:hover .project-infos {
+  opacity: 1;
+}
+
+.project-infos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.6s ease-out;
+  opacity: 0;
+}
+
+.project-infos a {
+  font-size: 26px;
+}
+
+.project-infos p {
+  font-size: 26px;
+  margin-top: 1.5vw;
+  color: rgb(223, 223, 223);
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 1000px) {
+  .links a {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .wrapper h1 {
+    font-size: 70px;
+    margin: 118px 0 8px;
+  }
+
+  .scroll-wrapper {
+    margin: 360px auto 0;
+    text-align: center;
+  }
+
+  .about p {
+    width: 60%;
+  }
+
+  .line {
+    width: 50%;
+    margin: 60px auto 60px;
+  }
+
+  .skills h2 {
+    font-size: 46px;
+    margin-bottom: 24px;
+  }
+
+  .portfolio h2 {
+    font-size: 46px;
+    margin-bottom: 54px;
+  }
+
+  .projects-container {
+    margin: 20px auto;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 360px);
+  }
+
+  .project {
+    width: 92%;
+  }
+}
