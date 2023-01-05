@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-* {
+*,
+::before,
+::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -91,10 +93,11 @@ a:hover::after {
 }
 
 .wrapper h1 {
-  font-size: 60px;
+  font-size: clamp(36px, 5vw, 80px);
   margin: 38px 0 8px;
   letter-spacing: -4px;
   transform: scale(1, 0.7);
+  text-align: center;
 }
 
 .wrapper h2 {
@@ -205,16 +208,16 @@ a:hover::after {
 .project {
   position: relative;
   width: 60%;
+  height: 240px;
   margin: 0 auto 10px;
   border-radius: 10px;
-  /* border: 2px solid red; */
 }
 
 .project img {
   transition: 0.4s ease-out;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: center/cover;
   border-radius: 10px;
 }
 
@@ -253,10 +256,10 @@ a:hover::after {
     font-size: 16px;
   }
 
-  .wrapper h1 {
+  /* .wrapper h1 {
     font-size: 70px;
     margin: 118px 0 8px;
-  }
+  } */
 
   .scroll-wrapper {
     margin: 360px auto 0;
